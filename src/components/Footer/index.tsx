@@ -14,12 +14,12 @@ const Footer: React.FC<Props> = () => {
   const language = useSelector((state: RootState) => state.language);
 
   return (
-    <footer className="bg-white py-8 px-[175px] flex justify-between items-center gap-[64px] pb-[60px]">
-      <div className="flex flex-col items-start">
-        <div className="pt-[60px]">
-          <img src={logoFooter} alt="THD Logo" className="w-[410px] h-[200px]" />
+    <footer className="bg-white py-8 lg:py-16 px-6 lg:px-[175px] flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-[64px]">
+      <div className="flex flex-col items-center lg:items-start">
+        <div className="pt-[30px] lg:pt-[60px]">
+          <img src={logoFooter} alt="THD Logo" className="w-[205px] lg:w-[410px] h-[100px] lg:h-[200px]" />
         </div>
-        <p className="text-[#333333] font-bold text-xl text-center w-full mb-2 mt-5">
+        <p className="text-[#333333] font-bold text-lg lg:text-xl text-center w-full mb-2 mt-5">
           {language === 'en' ? 'Follow Us' : 'Theo dõi chúng tôi'}
         </p>
         <div className="flex space-x-4 justify-center w-full">
@@ -62,7 +62,7 @@ const Footer: React.FC<Props> = () => {
         </div>
         <div className="flex items-center space-x-3">
           <div className="w-6 h-6 text-center">
-            <img src={telephone} alt="Phone" className='w-[17px] h-5  object-contain ml-1' />
+            <img src={telephone} alt="Phone" className='w-[17px] h-5 object-contain ml-1' />
           </div>
           <span className='font-arimo'>(+84) 853 287 799</span>
         </div>

@@ -10,7 +10,6 @@ export default function GetInTouch({}: Props) {
   const language = useSelector((state: RootState) => state.language);
   useWow();
 
-
   return (
     <section className='pt-24 bg-[#F16C74] px-6 md:px-[120px] py-12'>
       <div className="font-arimo">

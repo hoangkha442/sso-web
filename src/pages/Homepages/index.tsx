@@ -15,11 +15,11 @@ export default function Homepages({}: Props) {
       <div className="mt-24">
         <Banner />
       </div>
-      <div className="px-[175px]">
+      <div className="px-6 lg:px-[175px]">
         <SignificantNumbers />
       </div>
       <Introduction />
-      <div className="px-[175px] max-h-80">
+      <div className="px-6 lg:px-[175px] max-h-full lg:max-h-80">
         <MFA />
       </div>
       <Plans />
