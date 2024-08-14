@@ -1,4 +1,3 @@
-import React from 'react';
 import img from '../../../assets/target.png';
 import bank from '../../../assets/bank.png';
 import medical from '../../../assets/medical.png';

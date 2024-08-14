@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import introductionImg from '../../../assets/introduction-image.png';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';

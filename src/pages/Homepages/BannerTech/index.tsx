@@ -1,4 +1,3 @@
-import React from 'react'
 import bannerTech from '../../../assets/banner-tech.png'
 type Props = {}
 

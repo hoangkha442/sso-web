@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/logo-creative-tim-black.svg';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'antd';

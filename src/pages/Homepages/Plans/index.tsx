@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import free from '../../../assets/Duo-Free_Icon.svg fill.png';
 import advantage from '../../../assets/Duo-Advantage_Icon.svg.png';
 import essentials from '../../../assets/Duo-Essentials_Icon.svg.png';

@@ -1,4 +1,3 @@
-import React from 'react'
 import Banner from './Banner'
 import SignificantNumbers from './SignificantNumbers'
 import Introduction from './Introduction'

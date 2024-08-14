@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import downArrow from '../../assets/chevron-expand.png';
 import useWow from '../../Hook/useWow';
 import { useSelector } from 'react-redux';
@@ -54,7 +53,6 @@ export default function GetInTouch({}: Props) {
         />
         <div className="relative w-full wow animate__fadeInUp" data-wow-delay="0.8s">
           <select 
-            placeholder={language === 'en' ? 'Company Size *' : 'Quy mô công ty *'} 
             className="appearance-none w-full p-4 rounded-md border border-transparent focus:outline-none focus:ring-2 focus:ring-white placeholder:text-[#666666]"
           >
             <option className='text-[#666666]'>{language === 'en' ? 'Company size*' : 'Quy mô công ty*'}</option>

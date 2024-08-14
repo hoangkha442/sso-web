@@ -1,4 +1,3 @@
-import React from 'react'
 import IntroductionSSO from './IntroductionSSO'
 import Benefits from './Benefits'
 import SingleSignOnIntro from './SingleSignOnIntro'

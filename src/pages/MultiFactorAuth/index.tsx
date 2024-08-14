@@ -1,4 +1,3 @@
-import React from 'react'
 import MFAIntro from './MFAIntro'
 import MFABenefits from './MFABenefits'
 import MFATargetAudience from './MFATargetAudience'

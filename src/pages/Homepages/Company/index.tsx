@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import usga from '../../../assets/usga.png';
 import lyft from '../../../assets/lyft.png';
 import rB from '../../../assets/r&b.png';
