@@ -1,7 +1,7 @@
 import img from '../../../assets/target.png';
 import bank from '../../../assets/bank.png';
 import medical from '../../../assets/medical.png';
-import enterprise from '../../../assets/enterprise.png';
+import enterprise from '../../../assets/goverment.png';
 import goverment from '../../../assets/goverment.png';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
