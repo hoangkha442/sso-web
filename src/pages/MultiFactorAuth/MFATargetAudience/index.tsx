@@ -4,7 +4,7 @@ import useWow from '../../../Hook/useWow';
 import img from '../../../assets/target.png';
 import bank from '../../../assets/bank.png';
 import medical from '../../../assets/medical.png';
-import enterprise from '../../../assets/enterprise.png';
+// import enterprise from '../../../assets/enterprise.png';
 import goverment from '../../../assets/goverment.png';
 
 type Props = {}
@@ -94,7 +94,7 @@ export default function MFATargetAudience({}: Props) {
   </div>
 
   <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.8s">
-    <img src={enterprise} alt="Enterprise" className="mb-4 h-16 lg:h-20" />
+    <img src={goverment} alt="Enterprise" className="mb-4 h-16 lg:h-20" />
     <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Enterprise' : 'Doanh nghiệp'}</h2>
     <ul className=" mt-5 list-disc list-inside">
       {language === 'en' ? (
