@@ -6,7 +6,7 @@ type Props = {}
 
 export default function SsoPortal({}: Props) {
   return (
-    <div className='mt-24'>
+    <div className='mt-24 overflow-hidden'>
       <IntroductionSSO />
       <Benefits />
       <SingleSignOnIntro />

@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
 import useWow from '../../../Hook/useWow';
-
+import mfaIntro from '../../../assets/high-level-mfa.svg';
 type Props = {}
 
 export default function MFAIntro({}: Props) {
@@ -31,8 +31,8 @@ export default function MFAIntro({}: Props) {
           </div>
         </div>
 
-        <div className="h-[250px] xl:h-[444px] w-full xl:w-[633px] border border-[#E3343F] bg-white rounded-[10px] shrink-0 wow animate__fadeInRight" data-wow-delay="0.8s">
-          {/* IMG */}
+        <div className="h-[250px] xl:h-[444px] w-full xl:w-[633px] bg-white rounded-[10px] shrink-0 wow animate__fadeInRight" data-wow-delay="0.8s">
+          <img src={mfaIntro} alt="" className='h-full rounded-lg'/>
         </div>
       </div>
     </section>

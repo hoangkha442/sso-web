@@ -10,7 +10,7 @@ type Props = {}
 
 export default function Homepages({}: Props) {
   return (
-    <>
+    <div className='overflow-hidden'>
       <div className="mt-24">
         <Banner />
       </div>
@@ -24,6 +24,6 @@ export default function Homepages({}: Props) {
       <Plans />
       <Companies />
       <BannerTech />
-    </>
+    </div>
   )
 }

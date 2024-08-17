@@ -12,6 +12,7 @@ module.exports = {
       },
       boxShadow: {
         'intro-btn-shadow': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        benefit: '0 0px 60px 0px rgb(0 0 0 / 10%)'
       },
       backgroundImage: {
         'intro': 'linear-gradient(to left, #FFFFFF 50%, #E33F43 150%)',

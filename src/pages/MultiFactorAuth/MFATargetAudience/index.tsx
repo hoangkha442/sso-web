@@ -1,11 +1,11 @@
-import img from '../../../assets/target.png';
-import bank from '../../../assets/bank.png';
-import medical from '../../../assets/medical.png';
-import enterprise from '../../../assets/goverment.png';
-import goverment from '../../../assets/goverment.png';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
 import useWow from '../../../Hook/useWow';
+import img from '../../../assets/target.png';
+import bank from '../../../assets/bank.png';
+import medical from '../../../assets/medical.png';
+import enterprise from '../../../assets/enterprise.png';
+import goverment from '../../../assets/goverment.png';
 
 type Props = {}
 
@@ -33,27 +33,88 @@ export default function MFATargetAudience({}: Props) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 lg:mt-12">
-        <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.2s">
-          <img src={bank} alt="Bank" className="mb-4 h-16 lg:h-20" />
-          <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Bank' : 'Ngân hàng'}</h2>
-          <p className="text-sm mt-2">[Description]</p>
-        </div>
-        <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.4s">
-          <img src={medical} alt="Medical Center" className="mb-4 h-16 lg:h-20" />
-          <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Medical Center' : 'Trung tâm Y tế'}</h2>
-          <p className="text-sm mt-2">[Description]</p>
-        </div>
-        <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.6s">
-          <img src={goverment} alt="Governance" className="mb-4 h-16 lg:h-20" />
-          <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Governance' : 'Chính phủ'}</h2>
-          <p className="text-sm mt-2">[Description]</p>
-        </div>
-        <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.8s">
-          <img src={enterprise} alt="Enterprise" className="mb-4 h-16 lg:h-20" />
-          <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Enterprise' : 'Doanh nghiệp'}</h2>
-          <p className="text-sm mt-2">[Description]</p>
-        </div>
-      </div>
+  <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.2s">
+    <img src={bank} alt="Bank" className="mb-4 h-16 lg:h-20" />
+    <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Bank' : 'Ngân hàng'}</h2>
+    <ul className=" mt-5 list-disc list-inside">
+      {language === 'en' ? (
+        <>
+          <li>Secure access to sensitive data and financial transactions.</li>
+          <li>Integrate banking apps with security measures.</li>
+          <li>Simplify secure access.</li>
+        </>
+      ) : (
+        <>
+          <li>Bảo vệ truy cập dữ liệu nhạy cảm và giao dịch tài chính.</li>
+          <li>Tích hợp ứng dụng ngân hàng với biện pháp bảo mật.</li>
+          <li>Đơn giản hóa truy cập an toàn.</li>
+        </>
+      )}
+    </ul>
+  </div>
+
+  <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.4s">
+    <img src={medical} alt="Medical Center" className="mb-4 h-16 lg:h-20" />
+    <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Medical Center' : 'Trung tâm Y tế'}</h2>
+    <ul className=" mt-5 list-disc list-inside">
+      {language === 'en' ? (
+        <>
+          <li>Provide robust security for healthcare environments.</li>
+          <li>Align with compliance requirements.</li>
+          <li>Integrate with applications and protect patient data.</li>
+        </>
+      ) : (
+        <>
+          <li>Cung cấp bảo mật mạnh mẽ cho môi trường y tế.</li>
+          <li>Phù hợp với yêu cầu tuân thủ.</li>
+          <li>Tích hợp ứng dụng và bảo vệ dữ liệu bệnh nhân.</li>
+        </>
+      )}
+    </ul>
+  </div>
+
+  <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.6s">
+    <img src={goverment} alt="Governance" className="mb-4 h-16 lg:h-20" />
+    <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Governance' : 'Chính phủ'}</h2>
+    <ul className=" mt-5 list-disc list-inside">
+      {language === 'en' ? (
+        <>
+          <li>Customizable security for government agencies.</li>
+          <li>Ensure safety in operations.</li>
+          <li>Protect citizen data.</li>
+        </>
+      ) : (
+        <>
+          <li>Bảo mật tùy chỉnh cho cơ quan chính phủ.</li>
+          <li>Đảm bảo an toàn trong hoạt động.</li>
+          <li>Bảo vệ dữ liệu công dân.</li>
+        </>
+      )}
+    </ul>
+  </div>
+
+  <div className="flex flex-col items-center p-6 rounded-[10px] bg-white shadow-md h-[350px] lg:h-[375px] wow animate__fadeInUp" data-wow-delay="0.8s">
+    <img src={enterprise} alt="Enterprise" className="mb-4 h-16 lg:h-20" />
+    <h2 className="text-xl lg:text-2xl">{language === 'en' ? 'Enterprise' : 'Doanh nghiệp'}</h2>
+    <ul className=" mt-5 list-disc list-inside">
+      {language === 'en' ? (
+        <>
+          <li>Offer multiple authentication methods.</li>
+          <li>Provide endpoint security.</li>
+          <li>Protect internal data and credentials.</li>
+        </>
+      ) : (
+        <>
+          <li>Cung cấp nhiều phương thức xác thực.</li>
+          <li>Bảo mật điểm cuối.</li>
+          <li>Bảo vệ dữ liệu nội bộ và thông tin đăng nhập.</li>
+        </>
+      )}
+    </ul>
+  </div>
+</div>
+
+
     </section>
   );
 }

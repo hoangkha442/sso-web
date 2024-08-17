@@ -2,6 +2,7 @@
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../redux/store';
 import useWow from '../../../Hook/useWow';
+import sso_benefit from '../../../assets/benefit.png';
 
 type Props = {}
 
@@ -10,7 +11,7 @@ export default function IntroductionSSO({}: Props) {
 
   useWow(); 
   return (
-    <section className='bg-intro xl:max-h-[615px] max-h-full lg:max-h-auto'>
+    <section className='bg-intro max-h-full'>
       <div className="flex flex-col xl:flex-row justify-between items-center py-20 px-6 lg:px-[120px] gap-10 lg:gap-[100px]">
         <div className="">
           <div className="flex flex-col font-arimo space-y-4">
@@ -34,8 +35,8 @@ export default function IntroductionSSO({}: Props) {
           </div>
         </div>
 
-        <div className="h-[300px] lg:h-[444px] w-full lg:w-[633px] border border-[#E3343F] rounded-[10px] shrink-0 wow animate__fadeInRight" data-wow-delay="0.8s">
-          {/* IMG */}
+        <div className="lg:h-[444px] lg:w-[633px] rounded-[10px] shrink-0 wow animate__fadeInRight w-full" data-wow-delay="0.8s">
+          <img src={sso_benefit} alt="benefit" className='rounded-[10px]'/>
         </div>
       </div>
     </section>
