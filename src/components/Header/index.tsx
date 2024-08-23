@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import logo from '../../assets/logo-creative-tim-black.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Dropdown } from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../redux/store';
@@ -11,6 +11,7 @@ import useToastify from '../../Hook/useToastify';
 const Header = () => {
   const language = useSelector((state: RootState) => state.language);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const { showWarningToast } = useToastify();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,7 @@ const Header = () => {
             <img src={logo} alt="SSO Logo" className={`${isScrolled ? 'h-8' : 'h-12'}`} />
             <p className="font-bold text-xl leading-8 text-[#056453]">SSO PORTAL</p>
           </Link>
-          <div className="hidden lg:inline-block">
+          {/* <div className="hidden lg:inline-block">
             <ul className="flex items-center space-x-5">
               <li className="text-sm text-[#54626A] hover:text-gray-900 duration-300 cursor-pointer">
                 <p onClick={() => showWarningToast('Tính năng chưa phát triển')}>{language === 'en' ? 'Our Product' : 'Sản phẩm của chúng tôi'}</p>
@@ -61,12 +62,12 @@ const Header = () => {
                 <p onClick={() => showWarningToast('Tính năng chưa phát triển')}>{language === 'en' ? 'Why SSO Portal?' : 'Tại sao chọn SSO Portal?'}</p>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         {/* RIGHT HEADER */}
         <div className="text-end flex items-center space-x-10">
           <div className="hidden lg:inline-block">
-            <button className="text-[13px] py-2 px-4 rounded border border-black text-[#363F44] hover:bg-gray-900 hover:border-gray-900 hover:text-white duration-500">
+            <button onClick={() => { navigate('/get-in-touch') }} className="text-[13px] py-2 px-4 rounded border border-black text-[#363F44] hover:bg-gray-900 hover:border-gray-900 hover:text-white duration-500">
               {language === 'en' ? 'Contact Sales' : 'Liên hệ bán hàng'}
             </button>
             <button className="text-[13px] py-2 px-4 rounded bg-[#E3343F] border border-[#E3343F] hover:bg-red-700 duration-500 text-white ml-4">
@@ -113,11 +114,9 @@ const Header = () => {
       >
         <ul className="flex flex-col items-start space-y-5 py-5 px-10 ">
           <li className="text-sm text-[#54626A] hover:text-gray-900 duration-300 cursor-pointer">
-            <p onClick={() => showWarningToast('Tính năng chưa phát triển')}>{language === 'en' ? 'Our Product' : 'Sản phẩm của chúng tôi'}</p>
+            <p onClick={() => showWarningToast('Tính năng chưa phát triển')}>{language === 'en' ? 'Contact Sales' : 'Liên hệ bán hàng.'}</p>
           </li>
-          <li className="text-sm text-[#54626A] hover:text-gray-900 duration-300 cursor-pointer">
-            <p onClick={() => showWarningToast('Tính năng chưa phát triển')}>{language === 'en' ? 'Why SSO Portal?' : 'Tại sao chọn SSO Portal?'}</p>
-          </li>
+          
         </ul>
       </div>
 

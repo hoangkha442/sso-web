@@ -3,7 +3,7 @@ import SignificantNumbers from './SignificantNumbers'
 import Introduction from './Introduction'
 import MFA from './MFA'
 import Plans from './Plans'
-import Companies from './Company'
+// import Companies from './Company'
 import BannerTech from './BannerTech'
 
 type Props = {}
@@ -22,7 +22,7 @@ export default function Homepages({}: Props) {
         <MFA />
       </div>
       <Plans />
-      <Companies />
+      {/* <Companies /> */}
       <BannerTech />
     </div>
   )
